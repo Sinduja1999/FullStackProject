@@ -1,0 +1,22 @@
+table{
+    background-color:rgb(195, 229, 229);
+    border:0cqmin;
+    border-color: black;
+    border-width: 0cqmin;
+    border-style: dashed;
+    
+}
+h3{
+background-color: azure;
+    width: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+th td{
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button{
+    margin-left: 80%;
+    align-items: end;
+}

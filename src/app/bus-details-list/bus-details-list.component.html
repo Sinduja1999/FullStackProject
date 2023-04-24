@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="listrow">
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control"placeholder="Search by StartingPoint" [(ngModel)] = "startingPoint"/>
+            <button class="btn btn-secondary" type="button"(click)="searchBystartingPoint()">Search</button>
+        </div>
+    </div>
+</div>
+    <button class="btn btn-dark" type="button" (click) = "fetchAcBus()">
+        Fetch AcBus
+      </button>
+      <button class="btn btn-dark" type="button" (click) = "fetchNonAcBus()">
+        Fetch NonAcBus
+      </button>
+      <table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Starting Point</th>
+            <th> Driver Name </th>
+            <th> Ending Point</th>
+            <th> Driver Number</th>
+            <th> Bus Number</th>
+            <th> Bus Type</th>
+            <th> Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let bus of busDetails" >
+            <td> {{bus.startingPoint}} </td>
+            <td> {{ bus.driverName }} </td>
+            <td> {{ bus.endingPoint}} </td>
+            <td> {{ bus.driverNumber}} </td>
+            <td> {{ bus.busNumber }} </td>
+            <td> {{ bus.busType }} </td>
+            <td>
+                <button (click) = "updateBusDetails(bus.busId)" class = "btn btn-secondary btn-circle btn-circle-sm m-1"> <i class="fa fa-edit"></i></button>
+                <button (click) = "confirmDelete(bus)" class = "btn btn-danger" style="margin-left: 10px"> <i class="fa fa-trash"></i></button>
+                <button (click) = "BusDetails(bus.busId)" class = "btn btn-success btn-circle btn-circle-sm m-1" style="margin-left: 10px"><i class="fa fa-eye"></i></button>
+               <button (click) = "bookTickets(bus)" class = "btn btn-success" style="margin-left: 10px"> Book!</button>
+            </td>
+    
+        <tr *ngIf="busDetails.length !== 0">
+                <button  class="m-3 btn btn-sm btn-danger"(click)="removeAllbusDetails()">Remove</button>
+            
+        </tr>
+        <tr scope="row" *ngIf="busDetails.length === 0">
+            <td colspan="4" class="text-center">No record found</td>
+    </tr>
+       
+    </tbody>
+</table>

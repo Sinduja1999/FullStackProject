@@ -1,0 +1,24 @@
+
+div{
+    color: black;
+    font-style: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img{
+    position: center;
+    margin-top: 5%;
+    margin-left: 50%;
+}
+
+.topnav{
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+label .text center{
+    align-items: center;
+}
+.a{
+    background-color: rgb(207, 163, 110);
+}

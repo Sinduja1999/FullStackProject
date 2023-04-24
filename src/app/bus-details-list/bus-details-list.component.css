@@ -1,0 +1,16 @@
+
+th{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
+    color:rgb(53, 26, 205);
+    background-color: rgb(136, 205, 198);
+}
+td{
+
+    color: rgb(7, 80, 58);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+table{
+    background-color:antiquewhite;
+}

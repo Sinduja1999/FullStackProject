@@ -1,0 +1,37 @@
+
+<h3 align="center"> View Bus Details</h3>
+<div>
+    <table align="center" border="1" width="60%" height="70%">
+    <tr>
+        <th> Starting Point: </th>
+        <td>{{busDetails.startingPoint}}</td>
+        </tr>
+    
+    <tr>
+        <th>Driver Name: </th>
+        <td> {{busDetails.driverName}}</td>
+    </tr>
+    <tr>
+         <th>Ending Point: </th>
+         <td>{{busDetails.endingPoint}}</td>
+         </tr>
+    
+    <tr>
+        <th> Driver Number:  </th>
+        <td>{{busDetails.driverNumber}}</td>
+        </tr>
+    <tr>
+         <th>Bus Id:</th> 
+         <td>{{busDetails. busId}}</td>
+         </tr>
+         <tr>
+         <th>Bus Number: </th>
+         <td> {{busDetails.busNumber}}</td>
+         </tr>
+<tr>
+       <th> Bus Type: </th>
+       <td> {{busDetails.busType}}</td>
+       </tr>
+    </table>
+</div>
+<button (click) = "PressBack()" class="btn btn-primary" routerLink="busDetails">Back</button>

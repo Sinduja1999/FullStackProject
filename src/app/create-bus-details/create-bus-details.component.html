@@ -1,0 +1,53 @@
+<!-- Here we are creating the BusDetails-->
+
+<div class="col-md-6 offset-md-3" >
+    <h3> Create BusDetails </h3>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="form-group">
+            <h5> StartingPoint</h5>
+            <input type="text" class ="form-control" id = "startingPoint"
+                [(ngModel)] = "busDetails.startingPoint" name = "startingPoint" placeholder="startingPoint">
+        </div>
+
+        <div class="form-group">
+            <h5> DriverName</h5>
+            <input type="text" class ="form-control" id = "driverName"
+                [(ngModel)] = "busDetails.driverName" name = "driverName" placeholder="DriverName">
+        </div>
+
+        <div class="form-group">
+            <h5> EndingPoint</h5>
+            <input type="text" class ="form-control" id = "endingPoint"
+                [(ngModel)] = "busDetails.endingPoint" name = "endingPoint" placeholder="EndingPoint">
+        </div>
+        <div class="form-group">
+            <h5> DriverNumber</h5>
+            <input type="text" class ="form-control" id = "driverNumber"
+                [(ngModel)] = "busDetails.driverNumber" name = "driverNumber" placeholder="DriverNumber">
+        </div>
+        <div class="form-group">
+            <h5> BusNumber</h5>
+            <input type="text" class ="form-control" id = "busNumber"
+                [(ngModel)] = "busDetails.busNumber" name = "busNumber" placeholder="BusNumber">
+        </div>
+        <div class="form-group">
+            <h5> BusType</h5>
+            <input type="text" class ="form-control" id = " busType"
+                [(ngModel)] = "busDetails.busType" name = "busType" placeholder="BusType">
+        </div>
+        <div class="form-group">
+            <h5> No Of Seats</h5>
+            <input type="text" class ="form-control" id = "noOfSeats"
+                [(ngModel)] = "busDetails.noOfSeats" name = "noOfSeats" placeholder="noOfSeats">
+        </div>
+        <div class="form-group">
+            <h5>Cost Per Seat</h5>
+            <input type="text" class ="form-control" id = "costPerSeats"
+                [(ngModel)] = "busDetails.costPerSeats" name = "costPerSeats">
+        </div>
+
+        <button class = "btn btn-success" type ="submit">Submit</button>
+
+    </form>
+    </div>

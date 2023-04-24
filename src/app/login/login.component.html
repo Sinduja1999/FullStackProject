@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+<div class="login-form">
+  <h1>SKY BUS</h1>
+  <div class="form-group ">
+    <i class="fa fa-user"></i>
+    <input type="text"  name="username" placeholder="Enter Username" [(ngModel)] = "username">
+  <!--</div class="alert alert-danger" role="alert" *ngIf="invalidLogin">Username is requuired! -->
+  
+  </div>
+  <div class="form-group log-status">
+    <i class="fa fa-lock"></i>
+    <input type="password" name="password" placeholder="Enter Password" [(ngModel)] = "password"> 
+    
+  </div>
+  <p id="e">{{message}}</p>
+  <button (click)="checkLogin()" class="btn btn-success"> Login </button><br>
+  
+  <p>Don't Have a Account</p>
+  <button><a href="app-sign-up">Go to SignUp Page</a></button>
+  
+ 
+</div>

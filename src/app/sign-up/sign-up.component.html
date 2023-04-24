@@ -1,0 +1,13 @@
+<div id="login-box">
+    <div class="left" align="center">
+      <h1>Sign up</h1>
+      
+      <input type="text" name="username" placeholder="Username" [(ngModel)]="Username" required="required"/>
+      <input type="text" name="email" placeholder="E-mail" [(ngModel)]="email" required="required" />
+      <input type="password" name="password" placeholder="Password"  [(ngModel)]="Password" required="required"/>
+      <input type="password" name="password2" placeholder="Retype password" [(ngModel)] = "Retypepassword" required="required" />
+      <button (click)="checkPassword()"> SignUp </button>
+      
+    </div>
+    
+    
